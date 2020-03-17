@@ -1,11 +1,29 @@
+body{
+    background: url(wall.png);
+    display: flex;
+    flex-direction: column;
+}
 #clock{
+    margin: auto auto;
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 1px solid #000;
+	border: 5px solid #000;
 	margin: auto auto;
 	position: relative;
-	z-index: -1;
+    z-index: -1;
+}
+#dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-bottom: -4px;
+    z-index: 1;
 }
 #hour{
 	height: 40px;
@@ -16,7 +34,6 @@
 	bottom: 50%;
 	transform-origin: bottom center;
     z-index: 1;
-    transform: scaleY(-1);
 }
 #minute{
 	height: 55px;
@@ -30,7 +47,7 @@
 }
 #second{
 	height: 70px;
-	width: 1px;
+	width: 2px;
 	background-color: red;
 	transform-origin: 100%;
 	position: absolute;
