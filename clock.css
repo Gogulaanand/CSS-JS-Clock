@@ -1,0 +1,40 @@
+#clock{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	margin: auto auto;
+	position: relative;
+	z-index: -1;
+}
+#hour{
+	height: 40px;
+	width: 1px;
+	background-color: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-origin: top center;
+	z-index: 1;
+}
+#minute{
+	height: 55px;
+	width: 1px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: top center;
+	z-index: 2;
+}
+#second{
+	height: 70px;
+	width: 1px;
+	background-color: red;
+	transform-origin: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: top center;
+	z-index: 3;
+}
